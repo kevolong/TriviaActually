@@ -1,0 +1,53 @@
+/* Start Component style*/
+#start-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#start-page h2#start-title {
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+}
+
+#start-page h3#start-sub-titles {
+  padding: 0;
+  margin: 2em 0 2em 0;
+}
+
+#start-page h5#warning {
+  color: #7c1219;
+  margin: 0.75em 0 0 0;
+}
+
+@media screen and (max-width: 425px) {
+  #start-page {
+    padding: 1em;
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #start-page {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  #start-page {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=start.css.map */

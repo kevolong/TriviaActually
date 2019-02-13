@@ -1,0 +1,100 @@
+extends layout_admin
+
+block content
+    h1 Welcome Admin
+    h2 STATS
+    div#main-score-stats.data-block
+        div.data-row
+            div.label-column
+                h4 Total Scores:
+            div.data-column
+                h4 #{totalCount}
+            div.label-column
+                h4 Unique IPs:
+            div.data-column
+                h4 #{ipCount}
+            div.label-column
+                h4 Average:
+            div.data-column
+                h4 #{average}
+            div.label-column
+                h4 Median:
+            div.data-column
+                h4 #{median}
+    div#score-breakdown-stats.data-block
+        h3 Score Totals
+        div.flex-col
+            div.data-row
+                div.label-column
+                    h4 0:
+                div.data-column
+                    h4 #{zeroCount}
+                div.label-column
+                    h4 10:
+                div.data-column
+                    h4 #{tenCount}
+                div.label-column
+                    h4 20:
+                div.data-column
+                    h4 #{twentyCount}
+                div.label-column
+                    h4 30:
+                div.data-column
+                    h4 #{thirtyCount}
+                div.label-column
+                    h4 40:
+                div.data-column
+                    h4 #{fortyCount}
+                div.label-column
+                    h4 50:
+                div.data-column
+                    h4 #{fiftyCount}
+                div.label-column
+                    h4 60:
+                div.data-column
+                    h4 #{sixtyCount}
+                div.label-column
+                    h4 70:
+                div.data-column
+                    h4 #{seventyCount}
+                div.label-column
+                    h4 80:
+                div.data-column
+                    h4 #{eightyCount}
+                div.label-column
+                    h4 90:
+                div.data-column
+                    h4 #{ninetyCount}
+                div.label-column
+                    h4 100:
+                div.data-column
+                    h4 #{hundredCount}
+
+    div#trivia-stats.data-block
+        div.data-row
+            div.label-column
+                h4 Easy Trivia Count:
+            div.data-column
+                h4 #{easyCount}
+            div.label-column
+                h4 Medium Trivia Count:
+            div.data-column
+                h4 #{medCount}
+            div.label-column
+                h4 Hard Trivia Count:
+            div.data-column
+                h4 #{hardCount}
+            div.label-column
+                h4 Total Trivia Count:
+            div.data-column
+                h4 #{totalTriviaCount}
+
+    div#locations-stats.data-block
+        h3 User Locations
+            ul.locations
+                for location in locations
+                    li= location
+
+        
+         
+         

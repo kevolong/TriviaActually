@@ -1,0 +1,30 @@
+@import "variables";
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+
+  img {
+    max-width: 275px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+    margin: 5px;
+  }
+
+  h2 {
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+    font-size: 1em;
+    margin: 5px;
+  }
+}

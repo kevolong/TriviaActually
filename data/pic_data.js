@@ -1,0 +1,40 @@
+/* Picture data
+    Tags with array of pictures to choose from
+*/
+
+module.exports = {
+  main: "heart_square.jpg",
+  juliet: "juliet_square.jpg",
+  mark: "mark_square.jpg",
+  peter: "peter_square.jpg",
+  daniel: "daniel_square.jpg",
+  sam: "sam_square.jpg",
+  daniel_sam: "daniel-sam_square.jpg",
+  joanna: "joanna_square.jpg",
+  david: "david_square.jpg",
+  natalie: "natalie_square.jpg",
+  david_natalie: "david-natalie_square.jpg",
+  colin: "colin_square.jpg",
+  caterer: "caterer_square.jpg",
+  billy: "billy_square.jpg",
+  joe: "joe_square.jpg",
+  aurelia: "aurelia_square.jpg",
+  aurelia_sister: "aurelia_sister_square.jpg",
+  jamie: "jamie_square.jpg",
+  karen: "karen_square.jpg",
+  harry: "harry_square.jpg",
+  daisy: "daisy_square.jpg",
+  mia: "mia_square.jpg",
+  john: "john_square.jpg",
+  judy: "judy_square.jpg",
+  john_judy: "john-judy_square.jpg",
+  sarah: "sarah_square.jpg",
+  karl: "karl_square.jpg",
+  rufus: "rufus_square.jpg",
+  president: "president_square.jpg",
+  babes: "babes_square.jpg",
+  tony: "tony_square.jpg",
+  anon_male: "anon-male_square.jpg",
+  anon_female: "anon-female_square.jpg",
+  question: "question_mark_square.jpg"
+};

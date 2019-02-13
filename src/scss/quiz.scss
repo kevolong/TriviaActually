@@ -1,0 +1,221 @@
+/* Quiz Component style*/
+
+@import "variables";
+
+$quiz-width-large: 550px;
+$quiz-width-mobile: 90vw;
+
+$quiz-height-large: 550px;
+$quiz-height-mobile: 535px;
+$quiz-height-mobile-small: 500px;
+$quiz-height-mobile-extra-small: 450px;
+
+$question-area-height-large: 125px;
+$question-area-height-mobile: 135px;
+$question-area-height-mobile-small: 115px;
+$question-area-height-mobile-extra-small: 100px;
+
+$choices-area-height-large: 340px;
+$choices-area-height-mobile: 315px;
+$choices-area-height-mobile-small: 300px;
+$choices-area-height-mobile-extra-small: 285px;
+
+$progress-area-height: 1em;
+
+$progress-bar-width-large: 475px;
+$progress-bar-width-mobile: 80vw;
+
+#quiz-page {
+  width: $quiz-width-large;
+  height: $quiz-height-large;
+  display: grid;
+  grid-template-rows: $question-area-height-large $choices-area-height-large $progress-area-height 1fr;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (max-width: 600px) {
+    width: $quiz-width-mobile;
+    height: $quiz-height-mobile;
+    grid-template-rows: $question-area-height-mobile $choices-area-height-mobile $progress-area-height 1fr;
+  }
+
+  @media screen and (max-width: 600px) and (max-height: 645px) {
+    width: $quiz-width-mobile;
+    height: $quiz-height-mobile-small;
+    grid-template-rows: $question-area-height-mobile-small $choices-area-height-mobile-small $progress-area-height 1fr;
+  }
+
+  @media screen and (max-width: 600px) and (max-height: 600px) {
+    width: $quiz-width-mobile;
+    height: $quiz-height-mobile-extra-small;
+    grid-template-rows: $question-area-height-mobile-extra-small $choices-area-height-mobile-extra-small $progress-area-height 1fr;
+  }
+
+  //Flex div for the question-row grid
+  #question-area {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: $quiz-width-large;
+    height: $question-area-height-large;
+
+    @media screen and (max-width: 600px) {
+      width: $quiz-width-mobile;
+      height: $question-area-height-mobile;
+    }
+
+    @media screen and (max-width: 600px) and (max-height: 645px) {
+      height: $question-area-height-mobile-small;
+    }
+
+    @media screen and (max-width: 600px) and (max-height: 600px) {
+      height: $question-area-height-mobile-extra-small;
+    }
+
+    //Grid for picture and question
+    #question-row {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+      align-items: center;
+
+      #question-pic {
+        padding: 0.5em;
+        margin: 0;
+
+        img {
+          width: 75px;
+          border-radius: 10px;
+          border: 2px solid $red;
+
+          @media screen and (max-width: 600px) {
+            width: 60px;
+          }
+
+          @media screen and (max-width: 600px) and (max-height: 600px) {
+            width: 50px;
+          }
+        }
+      }
+
+      #question {
+        font-size: 0.8em;
+        padding: 0 0.5em 0 0.5em;
+
+        @media screen and (max-width: 600px) {
+          font-size: 0.7em;
+        }
+
+        @media screen and (max-width: 600px) and (max-height: 640px) {
+          font-size: 0.65em;
+        }
+
+        @media screen and (max-width: 600px) and (max-height: 600px) {
+          font-size: 0.55em;
+        }
+      }
+    }
+  }
+
+  // Radio input section
+  #choices-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px 30px 30px;
+
+    @media screen and (max-width: 600px) {
+      padding: 5px 15px 5px 15px;
+    }
+
+    //Radio inputs and labels div
+    #choices {
+      margin-bottom: 1em;
+
+      @media screen and (max-width: 600px) {
+        margin-bottom: 0.5em;
+      }
+
+      //div for each radio input/label
+      .choice-container {
+        display: block;
+        width: $quiz-width-large / 1.4;
+        padding: 0.5em;
+        margin: 0.75em 0 0.75em 0;
+        border: 1px solid rgba(170, 170, 170, 0.75);
+        border-radius: 3px;
+        box-shadow: 0px 0px 2px 2px rgba(125, 12, 22, 0.1);
+        cursor: pointer;
+        font-size: 1.25em;
+        text-align: center;
+
+        @media screen and (max-width: 600px) {
+          width: $quiz-width-mobile / 1.3;
+          font-size: 0.9em;
+        }
+
+        @media screen and (max-width: 600px) and (max-height: 645px) {
+          font-size: 0.85em;
+        }
+
+        input {
+          display: none;
+        }
+      }
+
+      .choice-container:hover {
+        background-color: rgba(170, 170, 170, 0.5);
+      }
+
+      .choice-container.selected {
+        background-color: $red;
+        color: white;
+      }
+    }
+  }
+
+  #progress-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //Progress bar at bottom of quiz
+    #progress-bar-border {
+      width: $progress-bar-width-large;
+      border: 1px solid $ribbon-gradient-start; //$red;
+      border-radius: 3px;
+      height: 1em;
+      padding: 0;
+      margin: 0;
+
+      @media screen and (max-width: 600px) {
+        width: $progress-bar-width-mobile;
+      }
+
+      #progress-bar {
+        h5 {
+          text-align: right;
+          line-height: 1em;
+          font-size: 1em;
+          font-family: "Helvetica Neue";
+          font-weight: 400;
+          margin: 0;
+          padding: 0 (($progress-bar-width-large / 10) / 2.45) 0 0;
+        }
+        background: linear-gradient(
+          to right,
+          $ribbon-gradient-start 0%,
+          $ribbon-gradient-middle 50%,
+          $ribbon-gradient-end 100%
+        );
+        //background-color: $red;
+        color: white;
+        margin: 0;
+        padding: 0;
+      }
+    } // end of progress-bar-border
+  } // end of progress-area
+}

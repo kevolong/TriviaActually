@@ -1,0 +1,83 @@
+// Admin login and stats style
+@import "variables";
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+
+  h1 {
+    color: $red;
+    font-family: Helvetica, sans-serif;
+    font-weight: 900;
+    margin: 10px;
+  }
+
+  h2 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    margin: 5px;
+  }
+
+  h3 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    margin: 5px;
+  }
+
+  //Data labels and values
+  h4 {
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+    margin: 5px;
+  }
+
+  //Data groups
+  .data-block {
+    margin: 15px;
+
+    //Flex div to restrain data-rows in a div with header
+    .flex-col {
+      display: flex;
+      justify-content: center;
+    }
+
+    //Grid for labels/values
+    .data-row {
+      display: grid;
+      grid-template-columns: auto auto;
+
+      .label-column {
+        text-align: right;
+        align-self: end;
+      }
+      .data-column {
+        text-align: right;
+        align-self: end;
+
+        h4 {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  //Locations list
+  ul.locations {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+      margin: 5px;
+      font-family: "Helvetica Neue";
+      font-weight: 400;
+      font-size: 0.75em;
+    }
+  }
+}
