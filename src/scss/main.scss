@@ -224,7 +224,7 @@ main {
     a {
       text-decoration: none;
       color: $red;
-      font-family: "Helvetica Neue";
+      font-family: "Helvetica Neue", Helvetica, sans-serif;
       font-weight: 500;
       font-size: 1.1em;
     }
@@ -242,7 +242,7 @@ footer {
     align-items: flex-start;
   }
   #by-kevin {
-    font-family: "Helvetica Neue";
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 300;
     font-size: 1eem;
     line-height: 1;
@@ -267,19 +267,19 @@ footer {
 
 //Helvetica Neue normal weight
 .hel-neue-normal {
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
 }
 
 //Helvetica Neue normal weight
 .hel-neue-bold {
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 500;
 }
 
 //Helvetica Neue light weight
 .hel-neue-light {
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 300;
 }
 

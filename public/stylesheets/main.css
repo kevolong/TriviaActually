@@ -244,7 +244,7 @@ main #error-message h4 {
 main #error-message a {
   text-decoration: none;
   color: #f90202;
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 500;
   font-size: 1.1em;
 }
@@ -271,7 +271,7 @@ footer {
 }
 
 footer #by-kevin {
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 300;
   font-size: 1eem;
   line-height: 1;
@@ -293,17 +293,17 @@ footer #by-kevin a {
 }
 
 .hel-neue-normal {
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
 }
 
 .hel-neue-bold {
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 500;
 }
 
 .hel-neue-light {
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 300;
 }
 
